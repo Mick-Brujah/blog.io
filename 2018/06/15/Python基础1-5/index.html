@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">12:42:26</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>字符串是以 单引号’ 或双引号” 引起来的任意文本文字， 比如：’abc’ 、”xyz”<br>注：” 或 ‘ 本身只是一种表示方式，不是字符串的一部分， 比如:”abc”,只有a、b、c三个字符<br>如果” 或 ‘ 想要表达的是当前这个字符，那么要用 ‘ 或 “ 引起来<br>字符串是不可变的</p>
+<p><strong>注：python中没有字符的概念，都是字符串</strong><br>一、创建一个字符串：创建字符串很简单，只需要给一个变量(字符串类型)即可<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str1 = &apos;床前明月光&apos;</span><br><span class="line">str2 = &quot;疑是地上霜&quot;</span><br><span class="line">print(str1)</span><br><span class="line">print(str2)</span><br></pre></td></tr></table></figure></p>
+<p>二、字符串的运算<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line">print(1 + 2)  # 加法</span><br><span class="line"># 1、字符串拼接：将两个字符串拼接到一起</span><br><span class="line">str6 = &quot;hello&quot;</span><br><span class="line">str7 = &quot;是你好&quot;</span><br><span class="line">str8 = str6 + str7</span><br><span class="line">str9 = str6 + &quot;  &quot; + str7</span><br><span class="line">print(str8)</span><br><span class="line">print(str9)</span><br><span class="line"># 字符串不能执行减法运算</span><br><span class="line"></span><br><span class="line">2、重复输出字符串  *</span><br><span class="line">print(&quot;hellohellohello&quot;)</span><br><span class="line">print(str6 * 3)</span><br><span class="line"></span><br><span class="line"># 3、通过索引获取字符串中某个字符</span><br><span class="line"># 索引：从0开始</span><br><span class="line"># 索引，下标，index ： 同一个概念  ： 从0开始</span><br><span class="line"># 语法格式： 字符串[索引]</span><br><span class="line"># 可以访问及获取字符串中的一个字符</span><br><span class="line">str10 = &quot;我的愿望是拥有故宫的一块砖&quot;   # 13个字符</span><br><span class="line">print(str10[0])</span><br><span class="line">print(str10[2])</span><br><span class="line"># print(str10[13])  # 索引是不能越界的，越界会报错</span><br><span class="line"># IndexError: string index out of range</span><br><span class="line"></span><br><span class="line"># 4、字符串是不可变的</span><br><span class="line">str11 = &quot;hello&quot;</span><br><span class="line"># TypeError: &apos;str&apos; object does not support item assignment</span><br><span class="line"># str11[0] = &quot;a&quot;</span><br><span class="line">print(str11)  # hello</span><br><span class="line"># str11 = &quot;world&quot;</span><br><span class="line"># print(str11) # world</span><br><span class="line"></span><br><span class="line"># 5、截取字符串</span><br><span class="line">str12 = &quot;我的愿望是拥有故宫的一块砖和二环的一套房&quot;</span><br><span class="line">#        0  1 2 3 4 5 6 7 8 9 10111213141516171819</span><br><span class="line"># 语法格式： 字符串[[起始下标]:[结束下标]:[递增基数]]</span><br><span class="line">#</span><br><span class="line"># 从起始下标截取到字符串末尾</span><br><span class="line">str13 = str12[1:]</span><br><span class="line">print(str13)</span><br><span class="line"># 从头开始截取，截取到结束下标之前</span><br><span class="line">str14 = str12[:7]</span><br><span class="line">print(str14)</span><br><span class="line"># 从开始下标截取，截取到结束下标之前</span><br><span class="line">str15 = str12[2:9]</span><br><span class="line">print(str15)</span><br><span class="line"># 截取所有字符</span><br><span class="line">str16 = str12[:]</span><br><span class="line">print(str16)</span><br><span class="line"># 递增基数</span><br><span class="line">str17 = str12[0:9:3]</span><br><span class="line">print(str17)</span><br><span class="line"></span><br><span class="line"># 反转字符串</span><br><span class="line">str18 = str12[::-1]</span><br><span class="line">print(str18)</span><br><span class="line"></span><br><span class="line"># 6、判断字符串中是否含有某个子字符串</span><br><span class="line">print(&quot;北京&quot; in str12)  # F</span><br><span class="line">print(&quot;故宫&quot; in str12)  # T</span><br><span class="line">print(&quot;北京&quot; not in str12)  # T</span><br><span class="line"></span><br><span class="line"># 7、格式化字符串</span><br><span class="line"># %s : 格式化字符串</span><br><span class="line"># %d : 格式化整数</span><br><span class="line"># %f : 格式化浮点数    如果想要设置精度： %.2f  保留两位小数</span><br><span class="line"># 语法格式： 字符串(字符串里面有格式化字符) % (对应的数据)</span><br><span class="line">name = &quot;Lily&quot;</span><br><span class="line">age = 18</span><br><span class="line">weight = 50.2</span><br><span class="line"># 姓名是Lily,年龄是18,体重是50.2kg。</span><br><span class="line">print(&quot;姓名是&quot;, name, &quot;,年龄是&quot;, age, &quot;,体重是&quot;, weight, &quot;kg。&quot;)</span><br><span class="line">print(&quot;姓名是&quot; + name + &quot;,年龄是&quot; + str(age) + &quot;,体重是&quot; + str(weight) + &quot;kg。&quot;)</span><br><span class="line"></span><br><span class="line"># 当只有一个格式化符号时，可以省略小括号</span><br><span class="line">print(&quot;姓名是%s&quot; % name)</span><br><span class="line"># 当有多个格式化符号时，小括号不能省，元素用逗号隔开</span><br><span class="line">print(&quot;姓名是%s,年龄是%d,体重是%.2fkg。&quot; % (name, age, weight))</span><br><span class="line"></span><br><span class="line">print(&quot;%&quot;)</span><br><span class="line">print(&quot;%%&quot;)</span><br><span class="line">f1 = 2.33333333</span><br><span class="line"># 2.33%</span><br><span class="line">print(&quot;%.2f&quot; % f1 + &quot;%&quot;)</span><br><span class="line"># 当字符串中有格式化字符时，两个%%,输出一个%</span><br><span class="line">print(&quot;%.2f%%&quot; % f1)</span><br><span class="line"></span><br><span class="line"># 8、转义字符    \(将原本没有实际意义的字符转换为有实际意义的字符，</span><br><span class="line">#                 将原本有实际意义的字符转为没有意义的字符)</span><br><span class="line">#      反斜线本身有实际意义</span><br><span class="line"># \n  ---&gt;  换行</span><br><span class="line">print(&quot;abc\ndef&quot;)</span><br><span class="line"># \&apos;  ---&gt;   &apos;</span><br><span class="line">print(&quot;abc&apos;def&quot;)</span><br><span class="line"># \&quot;  ---&gt; &quot;</span><br><span class="line">print(&quot;abc\&quot;def&quot;)</span><br><span class="line"># \\   ---&gt;  \</span><br><span class="line">print(&quot;abc\\def&quot;)</span><br><span class="line"># \r  ---&gt;  回车</span><br><span class="line">print(&quot;abc\ref&quot;)</span><br><span class="line"></span><br><span class="line"># \b --&gt; 退格  \t --&gt; 横向制表   \a --&gt; 响铃</span><br><span class="line"># 保留原始字符，不转义</span><br><span class="line"># r  /  R   原始字符串：将所有转义字符直接输出，展示没有意义的普通字符</span><br><span class="line">print(&quot;********************************&quot;)</span><br><span class="line">print(&quot;\\\\\&quot;&quot;)   # \\&quot;</span><br><span class="line">print(r&quot;\\\\\&quot;&quot;)  # \\\\\&quot;</span><br><span class="line">print(R&quot;\\\\\&quot;&quot;)  # \\\\\&quot;</span><br></pre></td></tr></table></figure></p>
+<h3 id="字符串内嵌函数"><a href="#字符串内嵌函数" class="headerlink" title="字符串内嵌函数"></a>字符串内嵌函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line"># 1、eval(str): 将str当成有效的表达式来计算，将计算的结果返回</span><br><span class="line">print(eval(&quot;123&quot;))   # 123</span><br><span class="line">print(eval(&quot;+123&quot;))   # 123</span><br><span class="line">print(eval(&quot;-123&quot;))   # -123</span><br><span class="line">print(eval(&quot;1 + 2&quot;))  # 1 + 2    --&gt; 3</span><br><span class="line">print(eval(&quot;12 - 3&quot;))  # 12 - 3   --&gt; 9</span><br><span class="line"># print(eval(&quot;abc124&quot;))  # 失败</span><br><span class="line">num = eval(&quot;123&quot;)</span><br><span class="line">print(type(num))  # int</span><br><span class="line"></span><br><span class="line"># 2、len(str)  返回字符串的长度  字符串中字符的个数  必须记住</span><br><span class="line">str1 = &quot;123456789&quot;  # 9</span><br><span class="line">len1 = len(str1)</span><br><span class="line">print(len1)</span><br><span class="line"></span><br><span class="line"># 3、字母大小写转换   不影响原始字符串</span><br><span class="line">str2 = &quot;heLLo hi Nihao SawaDiKa&quot;</span><br><span class="line">print(str2)</span><br><span class="line"># lower()  将字符串中的字母全部小写</span><br><span class="line">print(str2.lower())</span><br><span class="line"># upper()  将字符串中的字母全部大写</span><br><span class="line">print(str2.upper())</span><br><span class="line"># swapcase()  将字符串中的大写字母转为小写，小写字母转为大写</span><br><span class="line">print(str2.swapcase())</span><br><span class="line"># capitalize()  字符串中的第一个字母大写，其他小写</span><br><span class="line">print(str2.capitalize())</span><br><span class="line"># title()  将字符串中的每隔单词的首字母大写，其他字母小写</span><br><span class="line">print(str2.title())</span><br><span class="line"></span><br><span class="line"># 4、返回一个指定长度的字符串   不影响原始字符串</span><br><span class="line">str3 = &quot;pyc&quot;</span><br><span class="line">print(str3.ljust(100,&quot;!&quot;))</span><br><span class="line"># str.center(width [,fillchar]) 返回一个指定长度width的字符串，str这个</span><br><span class="line"># 字符串在中间，其他位置用fillchar补全，默认是空格</span><br><span class="line">print(str3.center(15, &quot;*&quot;))</span><br><span class="line"># str.ljust(width [,fillchar]) 返回一个指定长度width的字符串，str这个</span><br><span class="line"># 字符串在左边，其他位置用fillchar补全，默认是空格</span><br><span class="line">print(str3.ljust(15, &quot;*&quot;))</span><br><span class="line"># str.rjust(width [,fillchar]) 返回一个指定长度width的字符串，str这个</span><br><span class="line"># 字符串在右边，其他位置用fillchar补全，默认是空格</span><br><span class="line">print(str3.rjust(15, &quot;*&quot;))</span><br><span class="line"># str.zfill(width) 返回一个指定长度width的字符串，str这个</span><br><span class="line"># 字符串在右边，其他位置用0补全</span><br><span class="line">print(str3.zfill(15))</span><br><span class="line"></span><br><span class="line"># 5、string.count(str [,begin, end]) :返回string里面str出现的次数，</span><br><span class="line"># 如果begin与end有值，查找该范围内的次数</span><br><span class="line">str4 = &quot;good very well good good very&quot;</span><br><span class="line">print(str4.count(&quot;good&quot;))</span><br><span class="line">print(str4.count(&quot;good&quot;, 3, 22))</span><br><span class="line"></span><br><span class="line"># 6、检测字符串中有没有另一个字符串</span><br><span class="line"># string.find(str [,begin, end]) 检测string中有没有str，如果存在返回</span><br><span class="line"># 第一次出现的下标，如果begin与end有值，查找该范围</span><br><span class="line"># 当找不到时，返回-1</span><br><span class="line"># 从左向右查找</span><br><span class="line">print(str4.find(&quot;very&quot;))</span><br><span class="line">print(str4.find(&quot;very&quot;, 10, 31))</span><br><span class="line">print(str4.find(&quot;qwert&quot;))</span><br><span class="line"></span><br><span class="line"># # string.rfind(str [,begin, end]) 检测string中有没有str，如果存在返回</span><br><span class="line"># 第一次出现的下标，如果begin与end有值，查找该范围</span><br><span class="line"># 当找不到时，返回-1</span><br><span class="line"># 从右向左查找</span><br><span class="line">print(str4.rfind(&quot;very&quot;))</span><br><span class="line"></span><br><span class="line"># string.index(str [,begin, end]) 检测string中有没有str，如果存在返回</span><br><span class="line"># 第一次出现的下标，如果begin与end有值，查找该范围</span><br><span class="line"># 当找不到时，返回Error，程序报错</span><br><span class="line"># 从左向右查找</span><br><span class="line">print(str4.index(&quot;very&quot;))</span><br><span class="line"># print(str4.index(&quot;qwer&quot;))</span><br><span class="line"></span><br><span class="line"># string.rindex(str [,begin, end]) 检测string中有没有str，如果存在返回</span><br><span class="line"># 第一次出现的下标，如果begin与end有值，查找该范围</span><br><span class="line"># 当找不到时，返回Error，程序报错</span><br><span class="line"># 从右向左查找</span><br><span class="line">print(str4.rindex(&quot;very&quot;))</span><br></pre></td></tr></table></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+

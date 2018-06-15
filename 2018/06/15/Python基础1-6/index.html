@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">12:42:26</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h3 id="while-循环"><a href="#while-循环" class="headerlink" title="while  循环"></a>while  循环</h3><p>作用: while 循环： 简化我们的代码量<br>‘’’<br>语法格式：<br>while 表达式:<br>    语句<br>表达式为boolean值<br>‘’’<br>逻辑：当程序执行到while语句时，首先判断表达式的值是否为真，为真则<br> 执行while下面的语句，如果为假，跳过while语句向下继续执行程序<br> 如果表达式为真，则执行语句，语句执行结束后，继续判断表达式的值，<br> 直到表达式为假，该语句停止执行</p>
+<p> 注意：当使用while循环时，循环的语句中一定要有一条语句可以更改while<br>  后面的判断条件<br> 除非我们的工程需要死循环</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> num = 1</span><br><span class="line">while num &lt;= 5:</span><br><span class="line">    print(&quot;hello&quot;)</span><br><span class="line">    # 更改条件的语句</span><br><span class="line">    num = num + 1</span><br><span class="line"></span><br><span class="line">print(&quot;12345678909876543&quot;)</span><br></pre></td></tr></table></figure>
+<h4 id="输出0-10"><a href="#输出0-10" class="headerlink" title="输出0-10"></a>输出0-10</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">num = 0</span><br><span class="line">while num &lt;= 10:</span><br><span class="line">    print(num)</span><br><span class="line">    num += 1</span><br></pre></td></tr></table></figure>
+<h1 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h1><p>语法格式：<br>for 变量 in 集合:<br>    语句</p>
+<p>逻辑：按顺序取’集合’中的每个元素赋值给’变量’,再去执行语句。如此<br>   往复循环，直到’集合’中的元素取完为止。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for i in range(5):</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<p>range([start,] stop [, step])<br>start: 指定开始的值，这个值包含在取值范围内，如果不写该参数，<br>默认从0开始<br>stop:指定结束的值，但这个值不包含在取值范围内<br>step:指定的递增基数，默认值为1<br>功能：生成一个数列(数字的集合列表)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">list1 = [100,200,300]</span><br><span class="line">for i in list1:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<h4 id="for–else-else-当集合中元素全部遍历结束时执行else下面的语句"><a href="#for–else-else-当集合中元素全部遍历结束时执行else下面的语句" class="headerlink" title="for–else  else:当集合中元素全部遍历结束时执行else下面的语句"></a>for–else  else:当集合中元素全部遍历结束时执行else下面的语句</h4><p>‘’’<br>语法格式：<br>for 变量 in 集合:<br>    语句1<br>else:<br>    语句2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">for i in range(3):</span><br><span class="line">    print(i)</span><br><span class="line">else:</span><br><span class="line">    print(&quot;嗓子痛&quot;)</span><br></pre></td></tr></table></figure>
+<h4 id="嵌套循环"><a href="#嵌套循环" class="headerlink" title="嵌套循环"></a>嵌套循环</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for i in range(3):</span><br><span class="line">    for j in range(3):</span><br><span class="line">        print(&quot;*&quot;)</span><br></pre></td></tr></table></figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+

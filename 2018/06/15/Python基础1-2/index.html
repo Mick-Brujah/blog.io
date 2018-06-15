@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">12:42:26</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>##python的数据类型：<br>                     Number数字（int 整型、 float 浮点型  complex 复数a+bj）<br>                    String 字符串    Boolean  布尔类型 True False</p>
+<h4 id="Number-数字类型"><a href="#Number-数字类型" class="headerlink" title="Number   数字类型"></a>Number   数字类型</h4><pre><code>分类：int 整型   float 浮点型  complex 复数  x+yj
+
+整型： 数学中的整数  分正负数
+</code></pre><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><pre><code>num1 = 100  读：将100赋值给num1
+num1 = 100
+print(num1)  # 100
+</code></pre><h4 id="用某一个变量给另一个变量赋值"><a href="#用某一个变量给另一个变量赋值" class="headerlink" title="用某一个变量给另一个变量赋值"></a>用某一个变量给另一个变量赋值</h4><pre><code>num2 = num1
+print(num2)  # 100
+</code></pre><h4 id="连续给多个变量赋值"><a href="#连续给多个变量赋值" class="headerlink" title="连续给多个变量赋值"></a>连续给多个变量赋值</h4><pre><code>num3 = num4 = num5 = num6 = 400
+print(num3)
+print(num4)
+</code></pre><h4 id="交互式赋值-注：变量的个数与常量的个数要一致"><a href="#交互式赋值-注：变量的个数与常量的个数要一致" class="headerlink" title="交互式赋值: 注：变量的个数与常量的个数要一致"></a>交互式赋值: 注：变量的个数与常量的个数要一致</h4><pre><code>num7, num8, num9 = 777, 888, 999
+print(num7)  # 777
+print(num8)  # 888
+print(num9)  # 999
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">a = 100</span><br><span class="line">b = 200</span><br><span class="line"># 交换两个数的值</span><br><span class="line"># 中间变量  c</span><br><span class="line">c = a  # c = 100</span><br><span class="line">a = b  # a = 200</span><br><span class="line">b = c  # b = 100</span><br><span class="line">print(a)</span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line">e = 666</span><br><span class="line">f = 888</span><br><span class="line">e, f = f, e   # e, f = 888, 666</span><br><span class="line">print(e)</span><br><span class="line">print(f)</span><br><span class="line"></span><br><span class="line">print(&quot;************窗前明月光******************&quot;)</span><br><span class="line"># 浮点型   float</span><br><span class="line">f1 = 1.234</span><br><span class="line">print(f1)</span><br><span class="line">print(type(f1))</span><br><span class="line">f2 = f1  # 1.234</span><br><span class="line">f3 = f4 = f5 = 6.66   # 6.66</span><br><span class="line">f6, f7 = 7.77, 8.88   # 7.77 8.88</span><br><span class="line">f8 = 1.0</span><br><span class="line">f9 = 1.1</span><br><span class="line">print(f8 + f9)  # 2.1</span><br><span class="line"># 2.0999999   在计算机中，浮点数的运算偶尔会有误差</span><br><span class="line"></span><br><span class="line"># 复数 complex</span><br><span class="line"># 定义： complex(x, y)  x:代表实数部分   y:代表虚数部分</span><br><span class="line"># 复数后期使用不多，仅作了解</span><br><span class="line">com1 = complex(1, 2)</span><br><span class="line">print(com1)</span><br></pre></td></tr></table></figure>
+<h3 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h3><pre><code>语法格式： 转换的类型(即将转换的对象)
+int -&gt; float   float -&gt; int  str -&gt; int  str -&gt; float   float -&gt; str
+int -&gt; str
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># str -&gt; int   字符串转为整型</span><br><span class="line">print(int(&quot;1&quot;))  # 1</span><br></pre></td></tr></table></figure>
+<h3 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h3><p>1、绝对值   abs()<br>2、比较两个数的大小 result<br>3、 返回给定参数的最大值或最小值  max()  min()<br>4、求x的y次幂  pow(x, y)<br>5、返回浮点数的四舍六入的值<br>     round(x, [n])  x: 即将四舍六入的数   n:可选的参数，保留几位小数<br>     python3.X  如果距离两边的整数大小一致时，取偶不取奇</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"># 如果想要使用math里面的内容，需要导入math库</span><br><span class="line"># 库：本质就是一个.py文件</span><br><span class="line"># 导入库的格式   import math</span><br><span class="line">import math</span><br><span class="line"># 当导入math库文件时，我们可以调用math里面所有的内容</span><br><span class="line">print(math.pi)</span><br><span class="line"># 1、向上取整</span><br><span class="line">print(math.ceil(1.03))</span><br><span class="line"></span><br><span class="line"># 2、向下取整</span><br><span class="line">print(math.floor(1.99))</span><br><span class="line"></span><br><span class="line"># 3、返回小数部分与整数部分, 返回的数据都是浮点型</span><br><span class="line"># (小数部份，整数部分)</span><br><span class="line">print(math.modf(3.22))</span><br><span class="line"></span><br><span class="line"># 4、开方  返回浮点数</span><br><span class="line">print(math.sqrt(9))   # 3</span><br><span class="line"></span><br><span class="line"># 5、返回绝对值  返回浮点数</span><br><span class="line">print(math.fabs(10))   # 10.0</span><br><span class="line"></span><br><span class="line"># 6、求e的x次幂   math.exp(x)</span><br><span class="line">print(math.exp(2))</span><br><span class="line"></span><br><span class="line"># 7、log()   指数  返回浮点数</span><br><span class="line">print(math.log(100, 10))   # 2</span><br><span class="line"></span><br><span class="line"># 8、log10()    返回浮点数</span><br><span class="line">print(math.log10(100))  # 2</span><br><span class="line"></span><br><span class="line"># ************三角函数(了解)***************</span><br><span class="line"># acos(x)  返回x的反余弦弧度值， x的取值范围  -1  -  1 之间</span><br><span class="line">print(math.acos(0.34))</span><br><span class="line"># math.asin(x)  x的取值范围  -1  -  1 之间</span><br><span class="line"># math.atan(x)  x为任意一个数</span><br><span class="line"># math.sin(x)  x为任意一个数</span><br><span class="line"># math.cos(x)  x为任意一个数</span><br><span class="line"># math.tan(x)  x为任意一个数</span><br><span class="line"></span><br><span class="line"># 将角度转为弧度</span><br><span class="line">print(math.radians(180.0))</span><br><span class="line"># 将弧度转为角度</span><br><span class="line">print(math.degrees(math.pi))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># ************随机数（重点）***********</span><br><span class="line"># 想要获取随机数，需要导入random库</span><br><span class="line">import random</span><br><span class="line"></span><br><span class="line"># 1、从一个序列中随机挑选一个元素</span><br><span class="line">print(random.choice([1, 2, 3, 4, 5, 6]))</span><br><span class="line"># 2、range(x)</span><br><span class="line">print(random.choice(range(6)))  # range(6)  === [0,1,2,3,4,5]</span><br><span class="line"># 3、从字符串中随机选一个字母</span><br><span class="line">print(random.choice(&quot;meakelra&quot;))</span><br><span class="line"></span><br><span class="line"># 4、从指定范围内，按指定的递增奇数获取随机数</span><br><span class="line"># 语法格式：random.randrange([start,] stop [, step])</span><br><span class="line"># start: 指定开始的值，这个值包含在取值范围内，如果不写该参数，默认从0开始</span><br><span class="line"># stop:指定结束的值，但这个值不包含在取值范围内</span><br><span class="line"># step:指定的递增基数，默认值为1</span><br><span class="line"></span><br><span class="line"># 从0-99之间随机选一个数</span><br><span class="line">print(random.randrange(100))</span><br><span class="line">print(random.randrange(20, 55))</span><br><span class="line">print(random.randrange(0, 10, 4))   # 0 4 8</span><br><span class="line"></span><br><span class="line"># 4位</span><br><span class="line"># random.randrange(1000,10000)</span><br><span class="line"></span><br><span class="line"># 5、随机产生一个0-1之间的浮点数</span><br><span class="line">print(random.random())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 取整   0-10 之间的整数</span><br><span class="line">print(int(random.random() * 10))</span><br></pre></td></tr></table></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">12:42:26</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>##set 集合<br>set ： 与dict相比，set是一组存储key的集合，但不存储value<br>本质：一个无序的及元素不重复的集合</p>
+<h2 id="一、创建"><a href="#一、创建" class="headerlink" title="一、创建"></a>一、创建</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#创建set需要将一个list或tuple或dict作为参数传入</span><br><span class="line">set1 = set([1,2,3,4])</span><br><span class="line">print(set1)</span><br><span class="line">print(type(set1))</span><br><span class="line"></span><br><span class="line"># 重复的元素在set中会被自动过滤掉，只保留一份</span><br><span class="line">set2 = set([1,2,3,4,2,2,2,3,3,1,4,5,6,2,1])</span><br><span class="line">print(set2)  # &#123;1，2，3，4，5，6&#125;</span><br><span class="line"></span><br><span class="line"># tuple</span><br><span class="line">set3 = set((1,2,3,2,1))</span><br><span class="line">print(set3)</span><br><span class="line"></span><br><span class="line"># dict</span><br><span class="line">set4 = set(&#123;&quot;a&quot;:1, &quot;b&quot;:2, &quot;c&quot;:3&#125;)</span><br><span class="line">print(set4)  # 只保留字典的key值  # &#123;&apos;a&apos;,&apos;b&apos;,&apos;c&apos;&#125;</span><br><span class="line"></span><br><span class="line">dic5 = &#123;&quot;a&quot;:1, &quot;b&quot;:2, &quot;c&quot;:3&#125;</span><br><span class="line">set5 = set(dic5.values())</span><br><span class="line">print(set5)</span><br><span class="line"></span><br><span class="line"># 数据类型不匹配</span><br><span class="line"># set6 = set(100)</span><br><span class="line"># print(set6)  # TypeError: &apos;int&apos; object is not iterable(迭代器)</span><br><span class="line"># 迭代器就是一种集合数据类型</span><br></pre></td></tr></table></figure>
+<h2 id="二、添加数据"><a href="#二、添加数据" class="headerlink" title="二、添加数据"></a>二、添加数据</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">set7 = set([1,2,3,4])</span><br><span class="line"># 1、add(obj): 添加数据：在set中直接添加一个数据，add添加元素时，</span><br><span class="line"># 只能添加不可变类型的数据</span><br><span class="line">print(set7)  # &#123;1,2,3,4&#125;</span><br><span class="line">set7.add(5)</span><br><span class="line">print(set7)</span><br><span class="line">set7.add(1)  # 可以添加重复的数据，但是没有效果</span><br><span class="line">print(set7)</span><br><span class="line">set7.add(&quot;abc&quot;)</span><br><span class="line">print(set7)</span><br><span class="line">set7.add((1,2))</span><br><span class="line">print(set7)</span><br><span class="line"># 添加失败，因为add只能添加不可变的数据，而list是可变的</span><br><span class="line"># set7.add([1,2])</span><br><span class="line"># print(set7)</span><br><span class="line"># 添加失败，因为add只能添加不可变的数据，而dict是可变的</span><br><span class="line"># set7.add(&#123;&quot;a&quot;:1&#125;)</span><br><span class="line"># print(set7)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2、update(Iter):添加数据：在set中打碎添加集合中数据</span><br><span class="line"># Iter：list，tuple，string，dict</span><br><span class="line">set8 = set([1,2,3])</span><br><span class="line">set8.update([8,9])</span><br><span class="line">print(set8)</span><br><span class="line">set8.update((10,1))</span><br><span class="line">print(set8)</span><br><span class="line">set8.update(&quot;PYC&quot;)</span><br><span class="line">print(set8)</span><br><span class="line">set8.update(&#123;&quot;a&quot;:89, &quot;b&quot;:99&#125;)  # dict只能加入key值</span><br><span class="line">print(set8)</span><br><span class="line"># set8.update(100)  # 错误，因为int类型不是集合类型</span><br><span class="line"># print(set8)</span><br></pre></td></tr></table></figure>
+<h2 id="三、删除数据-remove"><a href="#三、删除数据-remove" class="headerlink" title="三、删除数据  remove"></a>三、删除数据  remove</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">set9 = set([1,2,3,4])</span><br><span class="line">print(set9)</span><br><span class="line">set9.remove(3)</span><br><span class="line">print(set9)</span><br><span class="line"></span><br><span class="line"># 四、注意：set是无序的，不支持下标的方式</span><br><span class="line"># TypeError: &apos;set&apos; object does not support indexing</span><br><span class="line"># print(set9[0])</span><br></pre></td></tr></table></figure>
+<h2 id="五、集合的操作"><a href="#五、集合的操作" class="headerlink" title="五、集合的操作"></a>五、集合的操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">set10 = set([1,2,3,4,5])</span><br><span class="line">set11 = set([4,5,6,7,8])</span><br><span class="line"># 1、&amp;  交集</span><br><span class="line">set12 = set10 &amp; set11</span><br><span class="line">print(set12)</span><br><span class="line"># 2、|   并集</span><br><span class="line">set13 = set10 | set11</span><br><span class="line">print(set13)</span><br><span class="line"># 3、^   补集</span><br><span class="line">set14 = set10 ^ set11</span><br><span class="line">print(set14)</span><br></pre></td></tr></table></figure>
+<h3 id="六、遍历set"><a href="#六、遍历set" class="headerlink" title="六、遍历set"></a>六、遍历set</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for i in set10:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># list-&gt;set</span><br><span class="line">set1 = set([1,2,3])</span><br><span class="line">print(set1)</span><br><span class="line">print(type(set1))  # set</span><br><span class="line"># tuple-&gt;set</span><br><span class="line">set2 = set((2,3,4))</span><br><span class="line">print(set2)</span><br><span class="line"># set-&gt;list</span><br><span class="line">list3 = list(set1)</span><br><span class="line">print(list3)</span><br><span class="line"># set-&gt;tuple</span><br><span class="line">tuple4 = tuple(set2)</span><br><span class="line">print(tuple4)</span><br><span class="line"># list-&gt;tuple</span><br><span class="line">tuple5 = tuple(list3)</span><br><span class="line">print(tuple5)</span><br><span class="line"># tuple-&gt;list</span><br><span class="line">list6 = list(tuple5)</span><br><span class="line">print(list6)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 将下面的list中重复的数据删除</span><br><span class="line">list11 = [1,2,3,6,3,2,1,1,1,9]</span><br><span class="line">set11 = set(list11)  # 过滤重复数据</span><br><span class="line">list12 = list(set11)</span><br><span class="line">print(list12)</span><br></pre></td></tr></table></figure>
+<h2 id="枚举遍历"><a href="#枚举遍历" class="headerlink" title="枚举遍历"></a>枚举遍历</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">list1 = [1,2,3,4,5]</span><br><span class="line"></span><br><span class="line"># 枚举遍历：可以将下标及元素同时遍历</span><br><span class="line">for i in enumerate(list1):</span><br><span class="line">    print(i)</span><br><span class="line"></span><br><span class="line"># index:下标   data：当前下标对应的数据</span><br><span class="line">for index,data in enumerate(list1):</span><br><span class="line">    print(index, data)</span><br><span class="line"></span><br><span class="line"># tuple</span><br><span class="line">tuple1 = (1,2,3)</span><br><span class="line">for i in enumerate(tuple1):</span><br><span class="line">    print(i)</span><br><span class="line"></span><br><span class="line">for index,data in enumerate(tuple1):</span><br><span class="line">    print(data)</span><br><span class="line"># dict</span><br><span class="line">dic1 = &#123;&quot;a&quot;:1,&quot;b&quot;:2&#125;</span><br><span class="line">for i in enumerate(dic1):</span><br><span class="line">    print(i)</span><br><span class="line"></span><br><span class="line"># index:下标  data：key值</span><br><span class="line">for index,data in enumerate(dic1):</span><br><span class="line">    print(index,data)</span><br><span class="line"></span><br><span class="line"># set</span><br><span class="line">set1 = set([1,2,3])</span><br><span class="line">for index,data in enumerate(set1):</span><br><span class="line">    print(index, data)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 判断数据类型</span><br><span class="line">int1 = 100</span><br><span class="line">print(type(int1))  # &lt;class &apos;int&apos;&gt;</span><br><span class="line"># 判断当前数据是否为某种类型：返回boolean值</span><br><span class="line">print(isinstance(int1, list))</span><br><span class="line"># int float str list tuple dict set bool NoneType</span><br><span class="line">print(type(None))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">list12 = [1, [4,5,7], 8, &quot;abc&quot;]</span><br><span class="line">for i in list12:</span><br><span class="line">    # print(i)</span><br><span class="line">    if isinstance(i, list) or isinstance(i, tuple) or isinstance(i, set):</span><br><span class="line">        for j in i:</span><br><span class="line">            print(j)</span><br><span class="line">    else:</span><br><span class="line">        print(i)</span><br></pre></td></tr></table></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+

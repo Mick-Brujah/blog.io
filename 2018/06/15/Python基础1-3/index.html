@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">12:42:26</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h3 id="运算符与表达式"><a href="#运算符与表达式" class="headerlink" title="运算符与表达式"></a>运算符与表达式</h3><p>什么是表达式：由变量、常量和运算符组成的式子称为表达式<br>一条语句：见到一个分号代表一条语句的结束，如果一行上面只有一<br>条语句，分号可以省略；如果一行上面有多条语句，每条语句用分号隔开。<br>一行语句：一行上面可以有多条语句，每条语句用分号隔开。</p>
+<p><strong>建议：一行上面尽量只写一条语句</strong><br>a = 100<br>b = 200<br>print(a)<br>print(b)</p>
+<p>运算符</p>
+<p>1、数学运算符<br> 功能：进行数学运算</p>
+<ul>
+<li>加号  两个对象相加</li>
+</ul>
+<ul>
+<li>减号  两个对象相减</li>
+</ul>
+<ul>
+<li>乘号  两个对象相乘<br>/   除号  两个对象相除   x / y   返回浮点数<br><strong>  幂运算   x </strong> y   x的y次幂<br>//  整除 地板除    只保留商   python中的整除，如果是负数，向负无穷无限靠近<br>%  取余    返回余数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p> 2、赋值运算符<br>         2.1、基本的赋值运算符    =<br>            =  将等号右边的内容赋值给左边的变量<br>            读： 从右向左读</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">num3 = 3</span><br><span class="line">num4 = 4 + 5</span><br><span class="line">print(num4)</span><br></pre></td></tr></table></figure>
+<pre><code>2.2、组合赋值运算符
+   # +=  -=  *=  /=  //=  %=  **=
+   # a += b   ====&gt;  a = a + b
+   # a -= b   ====&gt; a = a - b
+   # a *= b   ====&gt; a = a * b
+   # a /= b   ====&gt; a = a / b
+   # a //= b   ====&gt; a = a // b
+   # a **= b   ====&gt; a = a ** b
+   # a %= b   ====&gt; a = a % b
+</code></pre><p>3、比较运算符   后期用于if判断<br>     ==  等于 比较两个值是否相等   如果相等返回True，如果不相等返回False<br>     !=  不等于 比较两个值是否不相等 如果相等返回False，如果不相等返回True<br>     &gt;   大于   a&gt;b   a大返回True，a小返回False<br>     &lt;   小于  a&lt;b   a小返回True，a大返回False<br>     &lt;=   小于等于   a&lt;=b   a小于等于b返回True，否则返回False<br>     &gt;=   大于等于   a&gt;=b   a大于等于b返回True，否则返回False<br>4、逻辑运算符<br>     x,y 为可以出现boolean的值的表达式或x，y本身就是boolean值<br>     and   逻辑与   x and y   当x与y都为True时，整体才为True，<br>                     只要有一个为False，整体就是False<br>     or   逻辑或   x or y   当x与y都为False时，整体才为False，<br>                     只要有一个为True，整体就是True<br>     not   逻辑非   not(x)   将x的值取反<br>5、成员运算符<br>     in  如果在指定范围内能够找到该元素，返回True，否则为False<br>     not in    如果在指定范围内不能够找到该元素，返回True，否则为False<br>6、身份运算符<br>     is   判断两个变量是否引用同一个内存地址，如果是，为True，否则为False<br>     is not   判断两个变量是否引用同一个内存地址，如果不是，为True，否则为False<br>7、位运算符：对二进制进行的运算<br>     &amp;  按位与运算符：参与运算的两个值对应位置都为1时，该位置为1，否则为0<br>     |  按位或运算符：参与运算的两个值对应位置有一个为1时，该位置为1，否则为0<br>     ^  按位异或运算符：参与运算的两个值对应位置有且只有一个为1时，该位置为1，否则为0<br>     ~   按位取反运算符  ~x   -x-1<br>     &lt;&lt;    左移运算符  x&lt;<y 将x的二进制数向左移动y位="">&gt;   右移运算符  x&gt;&gt;y 将x的二进制数向右移动y位</y></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+

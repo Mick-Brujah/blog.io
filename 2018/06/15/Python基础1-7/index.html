@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">12:42:26</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h3 id="List-列表"><a href="#List-列表" class="headerlink" title="List  列表"></a>List  列表</h3><pre><code>为什么要使用列表？
+计算五个人平均年龄
+</code></pre><p>集合：存放所有人的年龄<br> List列表本质：一个有序的集合<br> 数组-列表</p>
+<p>##一、创建列表<br> 语法格式： 列表名 = [元素1, 元素2, 元素3…….,元素n]<br> 列表中的元素用逗号隔开</p>
+<h4 id="1、创建一个空列表"><a href="#1、创建一个空列表" class="headerlink" title="1、创建一个空列表"></a>1、创建一个空列表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">list1 = []</span><br><span class="line">print(list1)</span><br><span class="line">print(type(list1))</span><br></pre></td></tr></table></figure>
+<h4 id="2、创建一个带有元素列表"><a href="#2、创建一个带有元素列表" class="headerlink" title="2、创建一个带有元素列表"></a>2、创建一个带有元素列表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">list2 = [1, 2, 3, 4]</span><br><span class="line">print(list2)</span><br></pre></td></tr></table></figure>
+<p>注：列表里面的元素可以是不同类型的数据</p>
+<p>##二、列表元素的访问<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">list5 = [1, 2, 3, 4, 5, 6, 7]</span><br><span class="line"># 1、取值：格式： 列表名[下标]</span><br><span class="line">print(list5[2])</span><br><span class="line"># print(list5[7])  # IndexError: list index out of range  数组取值时，下标不能越界</span><br><span class="line"># 2、取值，从右向左取值</span><br><span class="line"># 当下标为-1时，获取最后一个元素</span><br><span class="line">print(list5[-1])  # 7</span><br><span class="line"># 下标不能越界</span><br><span class="line"># print(list5[-11])  # 错误</span><br><span class="line"></span><br><span class="line"># 3、替换元素</span><br><span class="line"># 语法格式： 列表名[下标] = 新值</span><br><span class="line">print(list5)</span><br><span class="line">list5[2] = 100</span><br><span class="line">print(list5)</span><br></pre></td></tr></table></figure></p>
+<p>##三、列表的操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"># 1、列表组合  +</span><br><span class="line">list6 = [1, 2, 3]</span><br><span class="line">list7 = [4, 5, 6, 1, 2, 3]</span><br><span class="line">list8 = list6 + list7</span><br><span class="line">print(list8)</span><br><span class="line"></span><br><span class="line"># 2、列表的重复 *</span><br><span class="line">list9 = [0]</span><br><span class="line">print(list9 * 10)</span><br><span class="line"></span><br><span class="line"># 3、判断某一个元素是否在列表中  in  not in</span><br><span class="line">list10 = [1, 2, 3, 4]</span><br><span class="line">print(4 in list10)   # T</span><br><span class="line">print(100 in list10)  # F</span><br><span class="line"></span><br><span class="line"># 4、列表的截取</span><br><span class="line"># 格式： 列表名[[起始下标] : [结束下标] : [递增基数]]</span><br><span class="line"># 获取从起始下标开始到结束下标之前的所有元素，默认递增基数为1</span><br><span class="line">list11 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span><br><span class="line"># 从头开始截取，截取到数字5</span><br><span class="line">print(list11[:6])</span><br><span class="line"># 从数字3开始截取，截取到末尾</span><br><span class="line">print(list11[3:])</span><br><span class="line"># 截取所有的元素</span><br><span class="line">print(list11[:])</span><br><span class="line"># 隔一取一</span><br><span class="line">print(list11[::2])</span><br><span class="line"># 反转列表</span><br><span class="line">print(list11[::-1])</span><br></pre></td></tr></table></figure>
+<h2 id="四、二维列表"><a href="#四、二维列表" class="headerlink" title="四、二维列表"></a>四、二维列表</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">list12 = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]</span><br><span class="line">print(list12)</span><br><span class="line">print(list12[1])  # [4, 5, 6]</span><br><span class="line">print(list12[2][1])</span><br><span class="line"></span><br><span class="line">list13 = list12[2]  # [7, 8, 9]</span><br><span class="line">int1 = list13[1]</span><br><span class="line">print(int1)</span><br><span class="line"></span><br><span class="line"># 12</span><br><span class="line">print(list12[3][2])</span><br><span class="line"># [1, 2, 3]</span><br><span class="line">print(list12[0])</span><br></pre></td></tr></table></figure>
+<h2 id="五、列表的操作–增删改查-对原本的列表有影响"><a href="#五、列表的操作–增删改查-对原本的列表有影响" class="headerlink" title="五、列表的操作–增删改查   对原本的列表有影响"></a>五、列表的操作–增删改查   对原本的列表有影响</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"># 1、增</span><br><span class="line">arr1 = [1, 2, 3, 4, 5]</span><br><span class="line"># append 在列表的末尾添加新的元素</span><br><span class="line"># list.append(obj)  obj为即将添加的元素，obj可以为任意类型</span><br><span class="line">print(arr1)</span><br><span class="line">arr1.append(666)</span><br><span class="line">arr1.append(&quot;abc&quot;)</span><br><span class="line">arr1.append([100, 200, 300])</span><br><span class="line">print(arr1) #[1, 2, 3, 4, 5, 666, &apos;abc&apos;, [100, 200, 300]]</span><br><span class="line"></span><br><span class="line"># extend 在列表末尾添加元素</span><br><span class="line"># list.extend(iter) 在列表末尾一次性追加iter里面所有的元素(将iter里面的元素</span><br><span class="line"># 分开添加)</span><br><span class="line"># iter:数据类型必须是集合类型</span><br><span class="line">arr2 = [1, 2, 3]</span><br><span class="line">arr2.extend([4, 5, 6])</span><br><span class="line">print(arr2)</span><br><span class="line"></span><br><span class="line"># insert  插入数据</span><br><span class="line"># list.insert(index, obj)  在指定的index下标位置新增元素，不会覆盖原来的元</span><br><span class="line"># 素，原数据的下标向后顺移</span><br><span class="line"># obj：为任意类型</span><br><span class="line">arr3 = [100, 200, 300, 400]</span><br><span class="line">arr3.insert(1, 999)</span><br><span class="line">arr3.insert(3, [111, 222])</span><br><span class="line">print(arr3)</span><br><span class="line"></span><br><span class="line"># 2、改</span><br><span class="line">arr4 = [1, 2, 3]</span><br><span class="line">arr4[1] = 500</span><br><span class="line">print(arr4)</span><br><span class="line"></span><br><span class="line"># 3、删</span><br><span class="line">arr5 = [1, 2, 3, 4, 5, 6]</span><br><span class="line"># pop 删除列表中的元素</span><br><span class="line"># pop([index]): 移除指定index位置的元素，如不写index，默认移除最后一个元素。</span><br><span class="line"># 并返回删除的数据</span><br><span class="line"># arr5.pop()</span><br><span class="line"># arr5.pop(2)</span><br><span class="line">print(arr5.pop(2))</span><br><span class="line">print(arr5)</span><br><span class="line"></span><br><span class="line">arr6 = [1, 2, 3, 4, 3, 2, 5, 1, 2, 3]</span><br><span class="line"># remove 移除数据</span><br><span class="line"># list.remove(obj)  移除列表中匹配到obj的第一项</span><br><span class="line">print(arr6)</span><br><span class="line">arr6.remove(2)</span><br><span class="line">print(arr6)</span><br><span class="line"></span><br><span class="line">arr7 = [1, 2, 3]</span><br><span class="line"># clear()  清除列表中所有的元素：清空列表</span><br><span class="line">print(arr7)</span><br><span class="line">arr7.clear()</span><br><span class="line">print(arr7)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 4、查</span><br><span class="line"># in    not in</span><br><span class="line"># list.index(obj [, begin, end])  从列表中找出第一个匹配到的下标</span><br><span class="line"># 当找不到元素时，返回一个Error</span><br><span class="line"># 如果给定begin与end：指定范围查找</span><br><span class="line">arr8 = [1, 2, 3, 4, 5, 6, 4, 4, 4, 4]</span><br><span class="line">print(arr8.index(4))</span><br><span class="line">print(arr8.index(4, 5, 7))</span><br></pre></td></tr></table></figure>
+<h2 id="六、列表的相关方法"><a href="#六、列表的相关方法" class="headerlink" title="六、列表的相关方法"></a>六、列表的相关方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"># 1、len(list)  返回列表中的元素个数</span><br><span class="line">list3 = [1, 2, 3, 4, 5, 6, 7]</span><br><span class="line">print(len(list3))  # 7</span><br><span class="line"># 2、max(list)  返回列表中的最大的元素</span><br><span class="line">print(max(list3))   # 7</span><br><span class="line"># 3、min(list)  返回列表中的最小的元素</span><br><span class="line">print(min(list3))  # 1</span><br><span class="line"># 4、list.count(obj)  返回obj元素在列表中的出现的次数</span><br><span class="line">list3 = [1, 2, 3, 4, 2, 3, 7, 2, 2]</span><br><span class="line">print(list3.count(2))  # 4</span><br><span class="line"></span><br><span class="line"># 5、list.reverse()  将列表中的元素反转</span><br><span class="line">list3.reverse()</span><br><span class="line">print(list3)</span><br><span class="line"></span><br><span class="line"># 6、list.sort()  对列表进行排序  默认升序</span><br><span class="line">list4 = [23, 6, 12, 1, 7, 89, 0]</span><br><span class="line">list4.sort()</span><br><span class="line">print(list4)</span><br><span class="line"></span><br><span class="line"># 7、拷贝</span><br><span class="line"># 浅拷贝 ： 只是表面上多了一个名字，内存地址还是原来的那个</span><br><span class="line"># 潘颖超   Meakelra</span><br><span class="line">list30 = [1,2,3,4]</span><br><span class="line">list31 = list30</span><br><span class="line">print(list30)</span><br><span class="line">print(list31)</span><br><span class="line">list31[2] = 100000</span><br><span class="line">print(list30)</span><br><span class="line">print(list31)</span><br><span class="line">print(id(list30))</span><br><span class="line">print(id(list31))</span><br><span class="line">print(&quot;---------------------------&quot;)</span><br><span class="line"></span><br><span class="line"># 深拷贝 ； 复制数据，将复制后的数据重新放到一个内存地址中</span><br><span class="line">list40 = [1,2,3,4]</span><br><span class="line">list41 = list40.copy()</span><br><span class="line">print(list40)</span><br><span class="line">print(list41)</span><br><span class="line">print(id(list40))</span><br><span class="line">print(id(list41))</span><br><span class="line">list40[2] = 1000000</span><br><span class="line">print(list40)</span><br><span class="line">print(list41)</span><br></pre></td></tr></table></figure>
+<h2 id="七、遍历list列表中的元素"><a href="#七、遍历list列表中的元素" class="headerlink" title="七、遍历list列表中的元素"></a>七、遍历list列表中的元素</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">listNew = [1,2,3,4,5,6]</span><br><span class="line"># 循环</span><br><span class="line"># while</span><br><span class="line">i = 0</span><br><span class="line">while i &lt; len(listNew):</span><br><span class="line">    print(listNew[i])</span><br><span class="line">    i = i + 1</span><br><span class="line"></span><br><span class="line"># for</span><br><span class="line">for i in listNew:</span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<h2 id="二维列表的遍历"><a href="#二维列表的遍历" class="headerlink" title="二维列表的遍历"></a>二维列表的遍历</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">list2 = [[1,2,3,4], [5,6,7,8], [9,11,12,13], [14,15,16,17]]</span><br><span class="line"></span><br><span class="line">for i in range(4):</span><br><span class="line">    for j in range(4):</span><br><span class="line">        print(list2[i][j])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">for i in range(len(list2)):</span><br><span class="line">    for j in range(len(list2[i])):</span><br><span class="line">        print(list2[i][j])</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 布尔值 ： 只有True和False</span><br><span class="line">b1 = True</span><br><span class="line">b2 = False</span><br><span class="line">print(b1, b2)</span><br><span class="line"></span><br><span class="line"># 空值：在python中有一个特殊的值，用None表示</span><br><span class="line"># None与0，0是有意义的，整型；None是空值类型</span><br><span class="line"></span><br><span class="line">n = None</span><br><span class="line">print(n)</span><br><span class="line">print(type(n))  # NoneType  空值类型</span><br></pre></td></tr></table></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
