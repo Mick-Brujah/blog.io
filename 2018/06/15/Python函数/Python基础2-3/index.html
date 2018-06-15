@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="孤独的飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="孤独的飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="孤独的飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>孤独的飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">17:41:39</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>概念：不使用def这个关键字定义函数，用lambda关键字来创建匿名函数</p>
+<p>特点：<br>1、lambda 只是一个表达式，函数体比def简单的多<br>2、lambda本质是表达式，而不是代码块，仅仅只能封装最简单的逻辑<br>3、lambda函数有自己的命名空间，并且不能修改除自己的参数列表以外的参数或全局命名<br>空间的参数</p>
+<p>格式： lambda 参数1,参数2…参数n : 表达式<br>表达式:只是一条简单的语句，不能包含循环，也不能有return，也不能有yield，<br>但允许有简单的if语句。如果表达式为元组，用小括号括起来。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def sum1(num1,num2,num3,num4):</span><br><span class="line">    if num1 &gt; 100:</span><br><span class="line">        num1 = 1</span><br><span class="line">        num2 = 2</span><br><span class="line">    return num1 + num2 + num3 + num4</span><br><span class="line">print(sum1(1,2,3,4))</span><br></pre></td></tr></table></figure></p>
+<p>函数的定义<br>res = lambda num1,num2,num3,num4 : num1+num2+num3+num4<br>函数的调用<br>print(res(1,2,3,4))<br>if-else可以写在lambda中，格式为：<br>结论1 if 判断表达式 else 结论2<br>当判断表达式为真时，取结论1；当判断表达式为假时，取结论2<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">add1 = lambda num:&quot;True&quot; if num==1 else &quot;False&quot;</span><br><span class="line">print(add1(1))</span><br><span class="line">print(add1(2))</span><br><span class="line"></span><br><span class="line">pow1 = lambda num1, num2 : num1 * num2</span><br><span class="line">print(pow1(1,2))</span><br><span class="line"></span><br><span class="line">a = 30</span><br><span class="line">def add3(num1):</span><br><span class="line">    return a+num1</span><br><span class="line">print(add3(1))</span><br><span class="line"></span><br><span class="line">b = 200</span><br><span class="line">res5 = lambda num : b</span><br><span class="line">print(res5(1))</span><br></pre></td></tr></table></figure></p>
+<h3 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h3><p>def fun1():<br>    print(123)<br>def fun2():</p>
+<pre><code># 函数内部是可以调用其他函数的，但必须保证这个函数在调用之前声明过
+fun1()
+</code></pre><p>fun2()</p>
+<p>在函数内部可以定义另一个函数<br>def fun3():<br>    def fun4():<br>        print(456)<br>    fun4()<br>fun3()</p>
+<p>装饰器<br>‘’’<br>概念：本身就是一个闭包<br>什么是闭包：把一个函数作为参数，返回一个代替版的函数。<br>本质：就是一个返回函数的函数<br>‘’’<br>最简单的闭包的写法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def closer():</span><br><span class="line">    def inner():</span><br><span class="line">        print(&quot;我是内部的函数&quot;)</span><br><span class="line">    # 执行inner函数</span><br><span class="line">    # inner()</span><br><span class="line">    return inner</span><br></pre></td></tr></table></figure></p>
+<p>res = closer()   # res ===== inner   inner函数<br>print(type(res))  # function函数类型<br>res()   # inner()<br>print(res)</p>
+<p>整合写法<br>closer()()</p>
+<p>1、简单的装饰器<br>定义一个简单函数<br>def myPrint():<br>    print(“这是myPrint执行结果”)</p>
+<p>定义一个函数，该函数有一个函数类型的参数，返回值为该函数的内部函数<br>def outer(paraFun):</p>
+<pre><code># 在函数内定义一个新的函数
+def inner():
+    # 在内部函数中调用其他函数
+    paraFun()    # myPrint()
+return inner
+</code></pre><p>调用outer函数<br>将myPrint函数当作参数传递给outer函数<br>f = outer(myPrint)  # f的值是outer的返回值  目前f为函数类型   f===inner<br>paraFun === myPrint<br>执行函数<br>f()</p>
+<p>2、复杂一点的装饰器<br>定义一个函数，该函数有一个参数<br>def getAge(age):</p>
+<pre><code># if age &lt; 0:
+#     age = 12
+print(&quot;我的年龄是 %d&quot; % age)
+</code></pre><p>getAge(18)<br>getAge(-18)<br>def getHeight(height):</p>
+<pre><code># if height &lt; 0:
+#     height = 70
+print(height)
+</code></pre><p>getHeight(-90)</p>
+<p>定义一个函数，该函数有一个函数类型的参数，返回值为该函数的内部函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">def outer(paraFun):</span><br><span class="line">    # 内部函数有形参</span><br><span class="line">    def inner(num):</span><br><span class="line">        # 添加检测条件</span><br><span class="line">        if num &lt; 0:</span><br><span class="line">            num = 12</span><br><span class="line">        paraFun(num)</span><br><span class="line">        # 如果paraFun调用时没有实参，会间接导致getAge报错</span><br><span class="line">    return inner</span><br><span class="line">f1 = outer(getAge)</span><br><span class="line">f1(45)</span><br><span class="line">f2 = outer(getHeight)</span><br><span class="line">f2(-99)</span><br></pre></td></tr></table></figure></p>
+<p>通过装饰器的方式，会使我们的代码变得更加简洁：将检测条件的逻辑放到一个<br>相对独立的方法中，通过装饰器的包装应用到我们需要的地方。<br>如果我们将检测条件放到原本的函数中，也可以达到相同的目的，但不可置否的是，<br>使用装饰器的方式会使我们以最少的代码量达到我们的目的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">def getDiv(a, b):</span><br><span class="line">    print(a / b)</span><br><span class="line"></span><br><span class="line">def outer(func):</span><br><span class="line">    def inner(num1, num2):</span><br><span class="line">        if num1 &lt; 0:</span><br><span class="line">            num1 = 1</span><br><span class="line">        if num2 &lt;= 0:</span><br><span class="line">            num2 = 1</span><br><span class="line">        func(num1, num2)</span><br><span class="line">    return inner</span><br><span class="line">f3 = outer(getDiv)</span><br><span class="line">f3(12, 0)</span><br></pre></td></tr></table></figure></p>
+<p>3、使用@符号将装饰器用用到函数中<br>python2.4以后支持@符号</p>
+<p>装饰器<br>def outer(func):<br>    def inner(num):<br>        if num &lt; 0:<br>            num = 99999<br>        print(“我是inner”)<br>        func(num)<br>    return inner</p>
+<p>@outer   # 相当于 getAge  == outer(getAge)<br>def getAge(age):<br>    print(age+1)<br>f4 = outer(getAge)<br>f4(-90)<br>getAge(22)<br>getAge(-99)</p>
+<p>@outer<br>def getWeight(ww):<br>    print(ww)<br>getWeight(-99)</p>
+<p>getAge()   ===  inner()</p>
+<p>4、通用装饰器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">def outer(func):</span><br><span class="line">    def inner(*args, **kwargs):</span><br><span class="line">        if len(args) == 0:</span><br><span class="line">            print(&quot;请输入内容&quot;)</span><br><span class="line">        elif args[0] &lt; 0:</span><br><span class="line">            print(&quot;过小&quot;)</span><br><span class="line">        print(args)</span><br><span class="line">        print(kwargs)</span><br><span class="line">        func(*args, **kwargs)</span><br><span class="line">    return inner</span><br><span class="line"></span><br><span class="line">@outer</span><br><span class="line">def age():</span><br><span class="line">    print(&quot;123456789&quot;)</span><br><span class="line">age()</span><br><span class="line"></span><br><span class="line">@outer</span><br><span class="line">def hh(l,k):</span><br><span class="line">    print(l,k)</span><br><span class="line">hh(-99,2)</span><br><span class="line"></span><br><span class="line">@outer</span><br><span class="line">def AA(l,k):</span><br><span class="line">    print(l,k)</span><br><span class="line">AA(l=-99,k=2)</span><br></pre></td></tr></table></figure></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+

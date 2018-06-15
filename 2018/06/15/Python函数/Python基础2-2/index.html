@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mick Brujah">
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="孤独的飞鱼"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="孤独的飞鱼"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.54xiaoyuge.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="孤独的飞鱼" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <!-- Site Title -->
+  <title>孤独的飞鱼</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  
+  <link rel="stylesheet" href="/css/style.light.css">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<header class="site-header header-background" style="background-image: url(/img/default-banner-dark.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">Untitled Post</p>
+          <p class="subtitle"></p>
+        </div>
+        <div class="site-menu with-background-image">
+          <ul>
+            
+              <li>
+                <a href="/">
+                  
+                  Home
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  
+                  Archives
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="https://github.com/<your-github-username>">
+                  
+                  Github
+                  
+                </a>
+              </li>
+            
+              <li>
+                <a href="mailto:<your-email-address>">
+                  
+                  Email
+                  
+                </a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By Mick Brujah</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On
+            <span class="date">2018-06-15</span>
+            <span class="time">17:41:39</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h3 id="需求：编写一个函数，在函数调用时出入函数一个字符串，函数的功能是打印改字符串"><a href="#需求：编写一个函数，在函数调用时出入函数一个字符串，函数的功能是打印改字符串" class="headerlink" title="需求：编写一个函数，在函数调用时出入函数一个字符串，函数的功能是打印改字符串"></a>需求：编写一个函数，在函数调用时出入函数一个字符串，函数的功能是打印改字符串</h3><p>定义一个只有一个参数的函数<br>形参(形式参数):定义函数时，小括号中的变量。本质：就是变量<br>在函数中，是可以正常使用形参的<br>def myPrint(name):<br>    print(“<strong><strong><strong>***</strong></strong></strong>“)<br>    print(name)</p>
+<p>函数的调用<br>实参(实际参数):函数调用时传递给函数的数据，本质是值<br>注：如果函数在声明时有形参，那么函数调用时就必须传入实参<br>myPrint(“abcdeghj”)<br>TypeError: myPrint() missing 1 required positional argument: ‘name’<br>错误：调用函数时，缺少必须的参数<br>myPrint()</p>
+<p>需求：定义一个函数，该函数有name及age两个参数，功能：将这个形参分行输出<br>建议：定义函数时，如果是多个单词的组合，遵循驼峰原则，单词的首字母大写<br>def getNameAndAge(name, age):<br>    print(“—————-“)<br>    print(name)<br>    print(age)</p>
+<p>调用函数<br>etNameAndAge(“MM”,18)<br>getNameAndAge(28, “GG”)<br>getNameAndAge(“WW”)</p>
+<p>注：参数：目前函数定义时的个数与函数调用时的个数必须一致；<br>目前实参是从左向右依次给形参赋值的</p>
+<h3 id="编写一个函数，功能：将传入的参数相加，返回两个参数的和"><a href="#编写一个函数，功能：将传入的参数相加，返回两个参数的和" class="headerlink" title="编写一个函数，功能：将传入的参数相加，返回两个参数的和"></a>编写一个函数，功能：将传入的参数相加，返回两个参数的和</h3><p>函数的定义<br>def mySum(num1, num2):</p>
+<pre><code># return 表达式  表达式可以是任意类型的数据或计算式或任意其他类型的数据
+# return：将表达式的内容返回给函数的调用者，表达式为什么类型的数据，
+# 目前该函数就可以认为是什么类型
+return num1 + num2
+</code></pre><p>函数的调用<br>mySum(1, 2)<br>输出：值<br>res = mySum(2,3)<br>print(res)<br>print(type(res))</p>
+<p>def ceShi():<br>    print(“123456”)</p>
+<pre><code># 当函数执行到return语句时，代表该函数执行结束，return后面的代码不再执行
+return &quot;abc&quot;
+# print(&quot;2468000000000&quot;)
+</code></pre><p>ceShi()</p>
+<p>res2 = ceShi()<br>print(res2)</p>
+<p>默认返回值  None<br>def testReturn():<br>    print(“我是测试”)</p>
+<pre><code># return None:当我们的函数的返回值为None,可以省略，
+# 系统默认会自动添加这行代码
+return None
+</code></pre><p>testReturn()</p>
+<p>res3 = testReturn()<br>print(res3)</p>
+<p>允许函数调用时传入参数顺序与声明时的顺序不一致，但赋值不会错乱<br>def getNameAndAge(name, age):<br>    print(“%s     %s” % (name, age))</p>
+<p>getNameAndAge(“MM”, 18)<br>getNameAndAge(28, “GG”)</p>
+<p>###关键字参数：就是在函数调用时写出形参名称并等号赋值<br>建议：以后尽量在函数调用时使用关键字参数<br>但是用关键字参数时，实参的传入顺序就任意了。<br>getNameAndAge(name=”MM”, age=18)<br>getNameAndAge(age=34, name=”QQ”)</p>
+<p>###默认参数：概念：在函数定义时，将某些形参直接赋予初始值。如果函数调用<br>时该形参没有传入实参，默认使用初始值<br>注意：如果函数使用了默认值格式，那么将默认参数放到没有默认值的参数的后面<br>如果使用默认值，函数调用时可以不传该形参的实参，默认使用定义时的初始值。</p>
+<p>定义函数<br>def myPrint(name, age=36):<br>    print(name)<br>    print(age)</p>
+<p>调用函数<br>myPrint(“MMMMM”, 12)<br>myPrint(“GG”)</p>
+<h3 id="值传递-：-传递的时一个值，传递的是不可变的数据类型；传递的是常量"><a href="#值传递-：-传递的时一个值，传递的是不可变的数据类型；传递的是常量" class="headerlink" title="值传递 ： 传递的时一个值，传递的是不可变的数据类型；传递的是常量"></a>值传递 ： 传递的时一个值，传递的是不可变的数据类型；传递的是常量</h3><p>str,tuple,number 是不可变的<br>def fun1(num):<br>    print(num)<br>    print(‘函数内部=’, id(num))  #</p>
+<p>fun1(100)<br>temp = 20<br>print(‘函数外部=’, id(temp))  # 123<br>fun1(temp)   # num = temp = 20</p>
+<p>引用传递:传递的可变数据类型；传递的是变量的内存地址<br>list，dict，set是可变的<br>def fun2(li):<br>    li[0] = 100<br>    print(li)</p>
+<p>list1 = [1,2,3]<br>[1,2,3]<br>print(list1)<br>[100,2,3]<br>fun2(list1)<br>[100,2,3]<br>print(list1)</p>
+<h3 id="函数内部变量与函数外部变量"><a href="#函数内部变量与函数外部变量" class="headerlink" title="函数内部变量与函数外部变量"></a>函数内部变量与函数外部变量</h3><p>def fun3(num):</p>
+<pre><code># 函数内部的变量名与函数形参名一致了，在内部使用时，看变量定义的
+# 先后顺序，在变量定义之后使用，则会默认取变量的值；
+# 在变量定义之前使用，则会默认取形参的值
+print(&apos;num1==&apos;,num)
+num = 200
+print(&apos;num2==&apos;, num)
+</code></pre><p>tmp = 20<br>fun3(tmp)<br>print(‘num3==’, tmp)</p>
+<h3 id="不定长参数"><a href="#不定长参数" class="headerlink" title="不定长参数"></a>不定长参数</h3><p>概念:能够处理比形参个数多的实参<br>def sum1(a,b):<br>    print(a+b)<br>def sum2(a,b,c):<br>    print(a+b+c)<br>print(max(1,2,6,9,0,8,7,6,4))</p>
+<p>加了星号(*)的变量，可以存放未定义的变量参数。</p>
+<h1 id="如果函数在调用时没有传入参数，那么他就是一个空元组，"><a href="#如果函数在调用时没有传入参数，那么他就是一个空元组，" class="headerlink" title="如果函数在调用时没有传入参数，那么他就是一个空元组，"></a>如果函数在调用时没有传入参数，那么他就是一个空元组，</h1><h1 id="如果函数调用时传入参数，那么把这些参数按照顺序放到元组中。"><a href="#如果函数调用时传入参数，那么把这些参数按照顺序放到元组中。" class="headerlink" title="如果函数调用时传入参数，那么把这些参数按照顺序放到元组中。"></a>如果函数调用时传入参数，那么把这些参数按照顺序放到元组中。</h1><h1 id="加了星号-的变量的数据类型就是元组类型。"><a href="#加了星号-的变量的数据类型就是元组类型。" class="headerlink" title="加了星号(*)的变量的数据类型就是元组类型。"></a>加了星号(*)的变量的数据类型就是元组类型。</h1><p>计算所有传入的实参的和<br>def fun(*args):<br>    print(args)<br>    num = 0<br>    for i in args:<br>        num += i<br>    print(num)<br>fun()<br>fun(1)<br>fun(1,2,3)<br>fun(6,8,9,6,5,4,3)</p>
+<h3 id="不定长参数-1"><a href="#不定长参数-1" class="headerlink" title="不定长参数"></a>不定长参数</h3><p>加了星号(<em>)的变量，可以存放未定义的变量参数。<br>如果函数在调用时没有传入参数，那么他就是一个空元组，<br>如果函数调用时传入参数，那么把这些参数按照顺序放到元组中。<br>加了星号(</em>)的变量的数据类型就是元组类型。<br>加了两个星号(<strong>)的变量，可以存放未定义的变量参数。<br>加了两个星号(</strong>)的变量:代表键值对的参数列表，数据类型就是字典类型。<br>定义一个函数<br>def myTest(**kwargs):<br>    print(kwargs)<br>函数的调用<br>myTest()<br>传入参数格式 : key=value<br>myTest(a=1)<br>myTest(qq=100, wx=200, mm=300)</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    <!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+          Theme By <a target="_blank" href="https://github.com/levblanc">Levblanc.</a>
+          Inspired By <a target="_blank" href="https://github.com/klugjo/hexo-theme-clean-blog">Clean Blog.</a>
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+<script src="/js/highlight.pack.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+  </body>
+</html>
+
